@@ -17,10 +17,10 @@ $(function () {
     }
 
     // Create walls - do not delete or modify this code
-    createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "navy"); // bottom wall
-    createPlatform(-50, -50, 50, canvas.height + 500); // left wall
-    createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
+    createPlatform(-50, -40, canvas.width + 100, 50); // top wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); // bottom wall
+    createPlatform(-40, -50, 50, canvas.height + 500); // left wall
+    createPlatform(canvas.width - 10, -50, 50, canvas.height + 100); // right wall
 
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
@@ -36,13 +36,15 @@ $(function () {
     createPlatform(300, 550, 50, 10);
     createPlatform(400, 450, 50, 10);
     createPlatform(500, 350, 50, 10);
-    createPlatform(75, 240, 200, 10);
+    createPlatform(100, 240, 200, 10);
     createPlatform(1200, 650, 300, 100);
 
     // TODO 3 - Create Collectables
 
     // TODO 4 - Create Cannons
-
+    //createCannon(wallLocation, position, timeBetweenShots, width, height)
+    createCannon("left", 200, 1500);
+    createCannon("top", 350, 1500);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////

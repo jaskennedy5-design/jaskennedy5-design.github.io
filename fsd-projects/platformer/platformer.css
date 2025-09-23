@@ -1,10 +1,12 @@
 body {
   margin: 0px;
+  background-color: black;
 }
 
 canvas {
-  background-color: lightblue;
+  background-color: rgb(230, 173, 175);
   margin: 20px;
+  background-image: url(https://t3.ftcdn.net/jpg/02/60/63/90/360_F_260639079_FBybOvOaVgpQVmzxNTZfZX0WzDmefgBl.jpg);
 }
 
 img {
