@@ -38,13 +38,23 @@ $(function () {
     createPlatform(500, 350, 50, 10);
     createPlatform(100, 240, 200, 10);
     createPlatform(1200, 650, 300, 100);
+    createPlatform(1200, 300, 50, 10);
+    createPlatform(1000, 450, 50, 10);
+    createPlatform(1100, 550, 50, 10);
+    createPlatform(900, 350, 50, 10);
 
     // TODO 3 - Create Collectables
+    //createCollectable("type", xPos, yPos, gravityNum, bounceNum Between 0 and .99)
+    //type can be any of these. In "". database diamond grace kennedi max steve
+    createCollectable("penguin", 175, 200, 1, 0);
+    createCollectable("penguin", 1200, 250, 1, 0);
+    createCollectable("penguin", 1000, 700, 1, 0);
 
     // TODO 4 - Create Cannons
     //createCannon(wallLocation, position, timeBetweenShots, width, height)
     createCannon("left", 200, 1500);
     createCannon("top", 350, 1500);
+    createCannon("right", 700, 700);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
