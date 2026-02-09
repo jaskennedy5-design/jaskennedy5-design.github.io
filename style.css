@@ -1,5 +1,7 @@
+/*Html css*/
+
 body {
-  background: rgb(46, 25, 7);
+  background: rgb(74, 52, 46);
   color: rgb(177, 113, 113);
   padding: 10px;
   font-family: Arial, sans-serif;
@@ -57,6 +59,8 @@ main {
 
 .sidebar-img {
   width: 300px;
+  max-width: 100%;
+  height: auto;
   border: solid 5px;
   border-radius: 5px;
 }
@@ -77,4 +81,61 @@ main {
 h2,
 h3 {
   margin: 0px;
+}
+
+/* Portfolio styles */
+.content h1 {
+  color: rgb(177, 113, 113);
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: rgb(177, 113, 113);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #acacac;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: rgb(245, 238, 219);
+}
+/*trying to make phone compatible*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nav-ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-li {
+    padding: 8px 0;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+main {
+  flex-wrap: wrap;
 }
