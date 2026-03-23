@@ -69,6 +69,13 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
+        var positionX = 0;
+        var points = 0;
+        var speed = 10;
+
+      
+      
+
 
 
 
@@ -80,10 +87,17 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
+          moveBoxTo(positionX); // Moves box to x-position 200
 
-        
+          positionX = positionX + speed;
 
-          
+          if (positionX >= boardWidth) {
+            speed = speed * -1;
+          }
+          if (positionX <= 0 ) {
+            speed = speed * -1
+          }
+
         }
 
         /**
@@ -94,6 +108,11 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
+          positionX = positionX = 0;
+          changeBoxText(points);
+          points++;
+          speed = 3 * points + 10;
+
 
 
 
